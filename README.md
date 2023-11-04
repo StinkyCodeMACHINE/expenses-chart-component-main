@@ -1,6 +1,6 @@
 # Frontend Mentor - Expenses chart component solution
 
-This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -19,7 +19,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ### Links
 
-- Live Site URL: [https://spectacular-unicorn-2078cc.netlify.app/](https://spectacular-unicorn-2078cc.netlify.app/)
+- Live Site URL: [https://luminous-figolla-ea91da.netlify.app/](https://luminous-figolla-ea91da.netlify.app/)
 
 ## My process
 
@@ -27,6 +27,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Preprocessor SCSS
 - JavaScript
 - Vue
 
