@@ -1,0 +1,37 @@
+@use "../util/functions" as u;
+
+.balance-info {
+  background-color: var(--soft-red);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: var(--very-pale-orange);
+  background-image: url("./assets/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 75px;
+  background-position: 90% 50%;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 545px) {
+      padding: 1.8rem;
+      border-radius: 1rem;
+    }
+
+  &__label {
+    font-size: u.rem(18);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
+    @media (max-width: 545px) {
+      font-size: 1rem;
+    }
+  }
+
+  &__amount {
+    font-size: 2rem;
+    font-weight: 700;
+
+    @media (max-width: 545px) {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+@use "../util/functions" as u;
+
+.spending-info {
+  background-color: var(--very-pale-orange);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: var(--dark-brown);
+
+  @media (max-width: 545px) {
+    padding: 1.8rem;
+    border-radius: 1rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+    font-weight: 700;
+
+    @media (max-width: 545px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    > div {
+      position: relative;
+    }
+
+    &__fig {
+      width: 55px;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        filter: brightness(130%);
+
+        & + div.spending-info__chart-container__tooltip {
+                visibility: visible;
+
+        }
+      }
+
+      @media (max-width: 545px) {
+        width: 30px;
+        border-radius: 0.3rem;
+      }
+    }
+
+    &__label {
+      text-align: center;
+      color: var(--medium-brown);
+      font-weight: 400;
+      margin-top: 0.5rem;
+      font-size: u.rem(18);
+      @media (max-width: 545px) {
+        font-size: 0.9rem;
+      }
+    }
+
+    &__tooltip {
+      position: absolute;
+      visibility: hidden;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 0.5rem;
+      background-color: var(--dark-brown);
+      color: var(--very-pale-orange);
+      padding: 0.5rem;
+      font-weight: 700;
+    }
+
+    padding: 4rem 0 2rem 0;
+    border-bottom: 1px solid var(--cream);
+  }
+
+  &__stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    padding-block: 1.5rem;
+
+    &__total-label,
+    &__diff-label {
+      color: var(--medium-brown);
+      font-size: u.rem(18);
+
+      @media (max-width: 545px) {
+        font-size: 1rem;
+      }
+    }
+
+    &__total-amount {
+      color: var(--dark-brown);
+      font-size: 3rem;
+      font-weight: 700;
+
+      @media (max-width: 545px) {
+        font-size: 2rem;
+      }
+    }
+
+    &__diff-amount {
+      color: var(--dark-brown);
+      font-weight: 700;
+      text-align: end;
+      font-size: u.rem(18);
+
+      @media (max-width: 545px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
