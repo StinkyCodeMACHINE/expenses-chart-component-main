@@ -13,8 +13,9 @@ const diff = ((1 - json.totalPrevMonth / json.totalThisMonth) * 100).toFixed(1);
 </script>
 
 <template>
-  <h1 class="sr-only">Expenses chart</h1>
   <main>
+    <h1 class="sr-only">Expenses chart</h1>
+
     <div class="balance-info">
       <div class="balance-info__label">My balance</div>
       <div class="balance-info__amount">${{ json.balance }}</div>
